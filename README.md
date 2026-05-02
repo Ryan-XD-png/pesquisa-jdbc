@@ -6,8 +6,10 @@ O padrão DAO é um padrão de projeto que tem como objetivo abstrair e encapsul
 Ele geralmente é utilizado dentro de uma arquitetura em camadas, como:
 1.  ### Camada de apresentação
 Onde fica toda a parte visual da aplicação.
+
 2.  ### Camada logica
 Onde é responsável por gerir o processamento lógico da aplicação.
+
 3.  ### Camada de dados
 Camada responsável por agregar os mecanismos de persistência, entidades e métodos responsáveis por prover o acesso ao banco de dados.
 _____
