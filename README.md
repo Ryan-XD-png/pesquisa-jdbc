@@ -1,12 +1,24 @@
 # Projeto de Pesquisa (Geral) — DAO + JDBC
 
 ## O que é o padrão DAO (Data Access Object)
+O padrão DAO é um padrão de projeto que tem como objetivo abstrair e encapsular o acesso aos dados, separando a lógica de persistência do restante da aplicação.
 
+Ele geralmente é utilizado dentro de uma arquitetura em camadas, como:
+1.  ### Camada de apresentação
+Onde fica toda a parte visual da aplicação.
+2.  ### Camada logica
+Onde é responsável por gerir o processamento lógico da aplicação.
+3.  ### Camada de dados
+Camada responsável por agregar os mecanismos de persistência, entidades e métodos responsáveis por prover o acesso ao banco de dados.
 _____
 
 ## Ciclo de vida da conexão JDBC
 
+### O que é o JDBC
+O JDBC é uma API do Java que permite que os desenvolvedores se conectem a um banco de dados relacional e executem consultas SQL para recuperar, inserir, atualizar e excluir dados. Ele fornece uma maneira padrão de interagir com bancos de dados e é uma das camadas mais baixas da pilha de persistência de dados em Java. Com o JDBC, os desenvolvedores precisam escrever código manualmente para criar conexões, preparar e executar consultas, e processar os resultados.
 
+### Seu ciclo de vida
+O JDBC estabelece uma conexão com o banco de dados, cria objetos para execução de comandos SQL, executa esses comandos, processa os resultados retornados e, ao final, fecha todos os recursos utilizados.
 _____
 
 ## Práticas de segurança
@@ -41,16 +53,12 @@ _____
 
 ## Fontes
 
-- https://www.oracle.com/java/technologies/data-access-object.html 
-- https://www.oracle.com/java/technologies/dataaccessobject.html
-- https://docs.oracle.com/javase/tutorial/jdbc/basics/index.html
-- https://docs.oracle.com/cd/E11035_01/wls100/server_start/server_life.html
-- https://pt.stackoverflow.com/questions/113840/como-funciona-o-padr%C3%A3o-dao
+- https://www.oracle.com/java/technologies/data-access-object.html entender o DAO
+- https://www.oracle.com/java/technologies/dataaccessobject.html entender o DAO
+- https://docs.oracle.com/javase/tutorial/jdbc/basics/index.html entender o jdbc
+- https://docs.oracle.com/cd/E11035_01/wls100/server_start/server_life.html entender o jdbc
+- https://pt.stackoverflow.com/questions/113840/como-funciona-o-padr%C3%A3o-dao entender o DAO
 - https://medium.com/@ajay.monga73/parameterized-queries-java-guide-how-to-prevent-sql-injection-with-parameterized-queries-10e250996df9 entender sql injection
 - https://www.digitalocean.com/community/tutorials/sql-injection-in-java entender sql injection
-
-_____
-
-## Mapa conceitual
 
 _____
